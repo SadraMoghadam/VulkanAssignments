@@ -1,0 +1,11 @@
+﻿  main.cpp
+main.obj : error LNK2019: unresolved external symbol _glfwInit referenced in function "private: void __thiscall HelloTriangleApplication::initWindow(void)" (?initWindow@HelloTriangleApplication@@AAEXXZ)
+main.obj : error LNK2019: unresolved external symbol _glfwTerminate referenced in function "private: void __thiscall HelloTriangleApplication::cleanup(void)" (?cleanup@HelloTriangleApplication@@AAEXXZ)
+main.obj : error LNK2019: unresolved external symbol _glfwWindowHint referenced in function "private: void __thiscall HelloTriangleApplication::initWindow(void)" (?initWindow@HelloTriangleApplication@@AAEXXZ)
+main.obj : error LNK2019: unresolved external symbol _glfwCreateWindow referenced in function "private: void __thiscall HelloTriangleApplication::initWindow(void)" (?initWindow@HelloTriangleApplication@@AAEXXZ)
+main.obj : error LNK2019: unresolved external symbol _glfwDestroyWindow referenced in function "private: void __thiscall HelloTriangleApplication::cleanup(void)" (?cleanup@HelloTriangleApplication@@AAEXXZ)
+main.obj : error LNK2019: unresolved external symbol _glfwWindowShouldClose referenced in function "private: void __thiscall HelloTriangleApplication::mainLoop(void)" (?mainLoop@HelloTriangleApplication@@AAEXXZ)
+main.obj : error LNK2019: unresolved external symbol _glfwPollEvents referenced in function "private: void __thiscall HelloTriangleApplication::mainLoop(void)" (?mainLoop@HelloTriangleApplication@@AAEXXZ)
+D:\University-Masters\Computer Graphics\Assignments\Tutorial\VulkanTutorial\VulkanTutorial\\External Libraries\Vulkan\Lib\vulkan-1.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+D:\University-Masters\Computer Graphics\Assignments\Tutorial\VulkanTutorial\VulkanTutorial\\External Libraries\GLFW\lib-vc2019\glfw3.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+D:\University-Masters\Computer Graphics\Assignments\Tutorial\VulkanTutorial\Debug\VulkanTutorial.exe : fatal error LNK1120: 7 unresolved externals

@@ -1,0 +1,12 @@
+C++ -> General -> Additional Include Directories:
+D:\Installations\Vulkan\App\Include;D:\Installations\Vulkan\glm-0.9.9.8\glm;D:\Installations\Vulkan\glfw-3.3.8.bin.WIN64\GLFW\include;%(AdditionalIncludeDirectories)
+
+Linker -> General -> Additional Library Directories:
+D:\Installations\Vulkan\App\Lib;D:\Installations\Vulkan\glfw-3.3.8.bin.WIN64\GLFW\lib-vc2019;%(AdditionalLibraryDirectories)
+
+Linker -> Input -> Additional Dependencies:
+vulkan-1.lib
+glfw3.lib
+
+C++ -> Language Standard:
+ISO C++17Standard

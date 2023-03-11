@@ -1,0 +1,13 @@
+﻿  A01.cpp
+D:\University-Masters\Computer Graphics\Assignments\A01_SLN\A01\A01\A01.cpp(1699,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A01_SLN\A01\A01\A01.cpp(2246,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A01_SLN\A01\A01\triangles.hpp(21,1): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A01_SLN\A01\A01\triangles.hpp(22,1): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A01_SLN\A01\A01\triangles.hpp(23,1): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A01_SLN\A01\A01\triangles.hpp(24,1): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A01_SLN\A01\A01\triangles.hpp(25,1): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A01_SLN\A01\A01\triangles.hpp(26,1): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A01_SLN\A01\A01\triangles.hpp(27,1): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A01_SLN\A01\A01\triangles.hpp(28,1): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A01_SLN\A01\A01\triangles.hpp(29,1): warning C4305: 'argument': truncation from 'double' to 'float'
+  A01.vcxproj -> D:\University-Masters\Computer Graphics\Assignments\A01_SLN\A01\x64\Debug\A01.exe
