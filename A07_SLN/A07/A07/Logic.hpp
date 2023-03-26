@@ -53,11 +53,6 @@ void GameLogic(Assignment07 *A, float Ar, glm::mat4 &ViewPrj, glm::mat4 &World) 
 	//glm::mat4 Mc = glm::mat4(glm::vec4(vx, 0), glm::vec4(vy, 0), glm::vec4(vz, 0), glm::vec4(0, 0, 0, 1));
 	//glm::mat4 Mv = glm::inverse(Mc);
 	///// View of third person, no rotation while rotating the character
-	glm::vec3 c = glm::vec3(Pos.x, Pos.y + camHeight, Pos.z + camDist);
-	glm::mat4 Mv = glm::lookAt(c, Pos, glm::vec3(0, 1, 0));
-	glm::mat4 Mp = glm::perspective(FOVy, Ar, nearPlane, farPlane);
-	Mp[1][1] *= -1;
-	ViewPrj = Mp * Mv;
 
 	glm::vec3 ux = glm::vec3(glm::rotate(glm::mat4(1), -yaw, glm::vec3(0, 1, 0)) * glm::vec4(1, 0, 0, 1));
 	glm::vec3 uy = glm::vec3(0, 1, 0);
@@ -81,10 +76,18 @@ void GameLogic(Assignment07 *A, float Ar, glm::mat4 &ViewPrj, glm::mat4 &World) 
 	glm::mat4 Rx = glm::rotate(glm::mat4(1.0), -pitch, glm::vec3(1, 0, 0));
 	glm::mat4 Ry = glm::rotate(glm::mat4(1.0), -yaw, glm::vec3(0, 1, 0));
 	glm::mat4 Rz = glm::rotate(glm::mat4(1.0), -roll, glm::vec3(0, 0, 1));
-	World = T * Ry * Rx * Rz;
+	World = T * Ry * Rz;
 	//World = Pos * yaw * pitch * roll;
 
 
+
+	//glm::vec3 c = glm::vec3(Pos.x, Pos.y + camHeight, Pos.z + camDist);
+	glm::vec3 c = glm::vec3(glm::vec4(Pos.x, Pos.y + camHeight + (camDist * sin(pitch)), Pos.z + camDist * cos(pitch), 1));
+	glm::vec3 a = Pos;
+	glm::mat4 Mv = glm::lookAt(c, a, glm::vec3(0, 1, 0));
+	glm::mat4 Mp = glm::perspective(FOVy, Ar, nearPlane, farPlane);
+	Mp[1][1] *= -1;
+	ViewPrj = Mp * Mv;
 
 
 	//glm::vec3 c = glm::vec3(Pos.x, Pos.y + camHeight, Pos.z - camDist);
