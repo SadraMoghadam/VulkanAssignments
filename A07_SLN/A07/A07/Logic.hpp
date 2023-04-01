@@ -83,7 +83,7 @@ void GameLogic(Assignment07 *A, float Ar, glm::mat4 &ViewPrj, glm::mat4 &World) 
 
 	//glm::vec3 c = glm::vec3(Pos.x, Pos.y + camHeight, Pos.z + camDist);
 	glm::vec3 c = glm::vec3(glm::vec4(Pos.x, Pos.y + camHeight + (camDist * sin(pitch)), Pos.z + camDist * cos(pitch), 1));
-	glm::vec3 a = Pos;
+	glm::vec3 a = glm::vec3(Pos.x, Pos.y + camHeight, Pos.z);
 	glm::mat4 Mv = glm::lookAt(c, a, glm::vec3(0, 1, 0));
 	glm::mat4 Mp = glm::perspective(FOVy, Ar, nearPlane, farPlane);
 	Mp[1][1] *= -1;
