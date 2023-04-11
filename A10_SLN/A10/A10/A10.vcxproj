@@ -160,6 +160,10 @@
   <ItemGroup>
     <ClInclude Include="Starter.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\PhongShader.frag" />
+    <None Include="shaders\PhongShader.vert" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

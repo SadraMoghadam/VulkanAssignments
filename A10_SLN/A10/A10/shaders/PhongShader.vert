@@ -23,7 +23,10 @@ layout(location = 2) out vec2 fragUV;
 	float t = gubo.time;
 	
 	/***** Insert the code here to compute the correct value of y ****/
-
+	float cx = sin(t/3) / 2;
+	float cz = cos(t/3) / 2;
+	float l = sqrt(pow(x - cx, 2) + pow(z - cz, 2));
+	y = y + sin(t / 4 + 4 * l) * exp(-l * l / 4);
 	/***** Leave it as is from this point on ****/
 	
 	vec3 vpos = vec3(x, y, z);
