@@ -27,4 +27,15 @@
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\BlinnShader1.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\BlinnShader2.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\BlinnShader3.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>
