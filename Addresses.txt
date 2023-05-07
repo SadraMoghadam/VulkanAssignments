@@ -10,3 +10,6 @@ glfw3.lib
 
 C++ -> Language Standard:
 ISO C++17Standard
+
+
+A07_SLN/A07/.vs/A07/v16/ipch/AutoPCH/a2b59773ab9a563/A07.ipch
