@@ -27,4 +27,18 @@
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\BlinnNormMapShader.frag">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="shaders\GGXNormMapShader.frag">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="shaders\OrenNayarShader.frag">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="shaders\PhongShader.frag">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

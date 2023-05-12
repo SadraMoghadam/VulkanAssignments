@@ -146,7 +146,7 @@ class Assignment12 : public BaseProject {
 				  {0, 1, VK_FORMAT_R32G32B32_SFLOAT, offsetof(VertexNormMap, normal),
 				         sizeof(glm::vec3), NORMAL},
 				  {0, 2, VK_FORMAT_R32G32B32A32_SFLOAT, offsetof(VertexNormMap, tangent),
-				         sizeof(glm::vec3), TANGENT},
+				         sizeof(glm::vec4), TANGENT},
 				  {0, 3, VK_FORMAT_R32G32_SFLOAT, offsetof(VertexNormMap, texCoord),
 				         sizeof(glm::vec2), UV}
 				});
