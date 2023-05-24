@@ -161,6 +161,9 @@
     <ClInclude Include="Starter.hpp" />
     <ClInclude Include="TextMaker.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\BlinnShader.frag" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
