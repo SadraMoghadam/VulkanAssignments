@@ -49,13 +49,13 @@ void main() {
 	// Write the shader here
 	
 	vec3 Hlx = normalize(gubo.lightDir + V);
-	vec3 specular = MS * pow(clamp(dot(N, Hlx), 0.0, 1.0), gamma);
+	vec3 specular = MS * pow(max(dot(N, Hlx), 0.0), gamma);
 	vec3 diffuse = MD * max(dot(gubo.lightDir, N), 0.0);
 	
 	vec3 DiffSpec = diffuse + specular;
 
-	vec3 Ambient = C00 + N.x * C11 + N.y * C1m1 + N.z * C10 + (N.x * N.y) * C2m2 + (N.y * N.z) * C2m1 + (N.z * N.z) * C21 + (N.x*N.x - N.y*N.y) * C22 + (3 * N.z * N.z - 1) * C20;
+	vec3 Ambient = C00 + N.x * C11 + N.y * C1m1 + N.z * C10 + (N.x * N.y) * C2m2 + (N.y * N.z) * C2m1 + (N.z * N.x) * C21 + (N.x*N.x - N.y*N.y) * C22 + (3 * N.z * N.z - 1) * C20;
 	
-	outColor = vec4(clamp(MA * Ambient,0.0,1.0), 1.0f);
+	outColor = vec4(DiffSpec * gubo.lightColor.rgb + MA * Ambient , 1.0f);
 	//outColor = vec4(MD, 1.0f);
 }

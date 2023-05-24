@@ -1,0 +1,43 @@
+﻿  A13.cpp
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\headers\stb_image_write.h(776,13): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(299,22): warning C4099: 'Texture': type name first seen using 'struct' now seen using 'class'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(206): message : see declaration of 'Texture'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(300,23): warning C4099: 'Pipeline': type name first seen using 'struct' now seen using 'class'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(240): message : see declaration of 'Pipeline'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(301,34): warning C4099: 'DescriptorSetLayout': type name first seen using 'struct' now seen using 'class'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(232): message : see declaration of 'DescriptorSetLayout'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(302,28): warning C4099: 'DescriptorSet': type name first seen using 'struct' now seen using 'class'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(279): message : see declaration of 'DescriptorSet'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(303,31): warning C4099: 'VertexDescriptor': type name first seen using 'struct' now seen using 'class'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(162): message : see declaration of 'VertexDescriptor'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(1812,16): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(1813,16): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(1877,20): warning C4018: '<': signed/unsigned mismatch
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(1952,19): warning C4018: '<': signed/unsigned mismatch
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(1963,19): warning C4018: '<': signed/unsigned mismatch
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(2555,19): warning C4018: '<': signed/unsigned mismatch
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(2673,19): warning C4018: '<': signed/unsigned mismatch
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(2706,20): warning C4018: '<': signed/unsigned mismatch
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(2744,21): warning C4018: '<': signed/unsigned mismatch
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(2779,19): warning C4018: '<': signed/unsigned mismatch
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\TextMaker.hpp(9,483): warning C4305: 'initializing': truncation from 'double' to 'const float'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\TextMaker.hpp(111,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\TextMaker.hpp(112,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\TextMaker.hpp(113,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\TextMaker.hpp(114,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\TextMaker.hpp(128,22): warning C4018: '<': signed/unsigned mismatch
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(2179,24): warning C4018: '<': signed/unsigned mismatch
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(2035): message : while compiling class template member function 'void Model<Vertex>::loadModelGLTF(std::string)'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(2240): message : see reference to function template instantiation 'void Model<Vertex>::loadModelGLTF(std::string)' being compiled
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(2234): message : while compiling class template member function 'void Model<Vertex>::init(BaseProject *,VertexDescriptor *,std::string,ModelType)'
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\A13.cpp(120): message : see reference to function template instantiation 'void Model<Vertex>::init(BaseProject *,VertexDescriptor *,std::string,ModelType)' being compiled
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\A13.cpp(48): message : see reference to class template instantiation 'Model<Vertex>' being compiled
+D:\University-Masters\Computer Graphics\Assignments\A13_SLN\A13\A13\Starter.hpp(2187,24): warning C4018: '<': signed/unsigned mismatch
