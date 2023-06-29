@@ -27,5 +27,6 @@ D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\TextMaker.hp
 D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\TextMaker.hpp(112,1): warning C4305: 'initializing': truncation from 'double' to 'float'
 D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\TextMaker.hpp(113,1): warning C4305: 'initializing': truncation from 'double' to 'float'
 D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\TextMaker.hpp(114,1): warning C4305: 'initializing': truncation from 'double' to 'float'
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(3,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(14,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   A14.vcxproj -> D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\x64\Debug\A14.exe
