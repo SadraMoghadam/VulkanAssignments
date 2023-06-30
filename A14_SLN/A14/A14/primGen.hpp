@@ -73,20 +73,21 @@ void Assignment14::createFunctionMesh(std::vector<Vertex>& vDef, std::vector<uin
 	// The procedures also fill the array vIdx with the indices of the vertices of the triangles
 	// The primitive built here is the surface y = sin(x) * cos(z) with -3 <= x <= 3 and -3 <= z <= 3.
 	float starting_range = 3.0f;
-	float full_length = starting_range * 2 + 1;
-	float step = 2.0f;
+	float step = 5.0f;
 	float range = starting_range * step;
+	float full_length = range * 2 + 1;
 	glm::vec3 norm = { 0, 0, 0 };
-	for (int x = -range; x <= range; x++)
+	for (int xi = -range; xi <= range; xi++)
 	{
-		for (int z = -range; z <= range; z++)
+		for (int zi = -range; zi <= range; zi++)
 		{
-			x /= step;
-			z /= step;
+			float x = (float)xi / step;
+			float z = (float)zi / step;
 			float y = sin(x) * cos(z);
 			glm::vec3 der_x = { 1, cos(x) * cos(z), 0 };
 			glm::vec3 der_z = { 0, sin(x) * -sin(z), 1 };
 			norm = { cos(x) * cos(z), 1, sin(x) * -sin(z) };
+			//norm = norm / abs(norm);
 			vDef.push_back({ {x, y, z},  norm });
 		}
 	}
@@ -94,12 +95,13 @@ void Assignment14::createFunctionMesh(std::vector<Vertex>& vDef, std::vector<uin
 	{
 		for (int z = -range; z <= range; z++)
 		{
-			if (x == -range || z == range)
+			if (x == -range || x == range || z == -range)
 			{
 				continue;
 			}
-			vIdx.push_back((x + starting_range) + (z + starting_range) * full_length); vIdx.push_back((x + starting_range) + (z + starting_range) * full_length - full_length); vIdx.push_back((x + starting_range) + (z + starting_range) * full_length - full_length + 1);
-			vIdx.push_back((x + starting_range) + (z + starting_range) * full_length); vIdx.push_back((x + starting_range) + (z + starting_range) * full_length + 1); vIdx.push_back((x + starting_range) + (z + starting_range) * full_length - full_length + 1);
+			//std::cout << (x + range) + (z + range) * full_length << "&" << (x + range) + (z + range - 1) * full_length << "&" << (x + range) + (z + range - 1) * full_length + 1 << " @@@ ";
+			vIdx.push_back((x + range) + (z + range) * full_length); vIdx.push_back((x + range) + (z + range - 1) * full_length); vIdx.push_back((x + range) + (z + range - 1) * full_length + 1);
+			vIdx.push_back((x + range) + (z + range) * full_length); vIdx.push_back((x + range) + (z + range) * full_length + 1); vIdx.push_back((x + range) + (z + range - 1) * full_length + 1);
 		}
 	}
 }

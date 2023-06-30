@@ -29,39 +29,36 @@ D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\TextMaker.hp
 D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\TextMaker.hpp(114,1): warning C4305: 'initializing': truncation from 'double' to 'float'
 D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(3,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(14,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(80,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(82,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(84,13): warning C4244: '/=': conversion from 'float' to 'int', possible loss of data
-D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(85,13): warning C4244: '/=': conversion from 'float' to 'int', possible loss of data
-D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(86,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(93,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(95,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(101,40): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(80,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(82,15): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(94,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(96,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(103,31): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
           with
           [
               _Ty=unsigned int
           ]
-D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(101,152): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(103,88): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
           with
           [
               _Ty=unsigned int
           ]
-D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(101,255): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(103,181): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
           with
           [
               _Ty=unsigned int
           ]
-D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(102,40): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(104,31): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
           with
           [
               _Ty=unsigned int
           ]
-D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(102,152): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(104,116): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
           with
           [
               _Ty=unsigned int
           ]
-D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(102,245): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(104,181): warning C4244: 'argument': conversion from 'float' to '_Ty', possible loss of data
           with
           [
               _Ty=unsigned int
