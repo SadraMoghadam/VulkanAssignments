@@ -1,0 +1,38 @@
+﻿  A14.cpp
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\Starter.hpp(300,22): warning C4099: 'Texture': type name first seen using 'struct' now seen using 'class'
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\Starter.hpp(207): message : see declaration of 'Texture'
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\Starter.hpp(301,23): warning C4099: 'Pipeline': type name first seen using 'struct' now seen using 'class'
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\Starter.hpp(241): message : see declaration of 'Pipeline'
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\Starter.hpp(302,34): warning C4099: 'DescriptorSetLayout': type name first seen using 'struct' now seen using 'class'
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\Starter.hpp(233): message : see declaration of 'DescriptorSetLayout'
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\Starter.hpp(303,28): warning C4099: 'DescriptorSet': type name first seen using 'struct' now seen using 'class'
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\Starter.hpp(280): message : see declaration of 'DescriptorSet'
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\Starter.hpp(304,31): warning C4099: 'VertexDescriptor': type name first seen using 'struct' now seen using 'class'
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\Starter.hpp(162): message : see declaration of 'VertexDescriptor'
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\Starter.hpp(1522,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\Starter.hpp(1813,16): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\Starter.hpp(1814,16): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\Starter.hpp(2573,48): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\TextMaker.hpp(9,483): warning C4305: 'initializing': truncation from 'double' to 'const float'
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\TextMaker.hpp(102,1): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\TextMaker.hpp(111,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\TextMaker.hpp(112,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\TextMaker.hpp(113,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\TextMaker.hpp(114,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(3,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(14,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(117,36): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\A14\primGen.hpp(121,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 5445 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  A14.vcxproj -> D:\University-Masters\Computer Graphics\Assignments\A14_SLN\A14\x64\Release\A14.exe
