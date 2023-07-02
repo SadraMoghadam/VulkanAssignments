@@ -1,0 +1,42 @@
+﻿  A16.cpp
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(308,31): warning C4099: 'VertexDescriptor': type name first seen using 'struct' now seen using 'class'
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(162): message : see declaration of 'VertexDescriptor'
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(310,22): warning C4099: 'Texture': type name first seen using 'struct' now seen using 'class'
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(208): message : see declaration of 'Texture'
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(311,23): warning C4099: 'Pipeline': type name first seen using 'struct' now seen using 'class'
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(250): message : see declaration of 'Pipeline'
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(312,34): warning C4099: 'DescriptorSetLayout': type name first seen using 'struct' now seen using 'class'
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(242): message : see declaration of 'DescriptorSetLayout'
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(313,28): warning C4099: 'DescriptorSet': type name first seen using 'struct' now seen using 'class'
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(289): message : see declaration of 'DescriptorSet'
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(1531,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(1794,16): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(1795,16): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(1836,1): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2607,48): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2050,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=unsigned int
+          ]
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(1991): message : while compiling class template member function 'void Model<VertexMesh>::loadModelOBJ(std::string)'
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2272): message : see reference to function template instantiation 'void Model<VertexMesh>::loadModelOBJ(std::string)' being compiled
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2268): message : while compiling class template member function 'void Model<VertexMesh>::init(BaseProject *,VertexDescriptor *,std::string,ModelType)'
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\A16.cpp(218): message : see reference to function template instantiation 'void Model<VertexMesh>::init(BaseProject *,VertexDescriptor *,std::string,ModelType)' being compiled
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\A16.cpp(77): message : see reference to class template instantiation 'Model<VertexMesh>' being compiled
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2099,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2059): message : while compiling class template member function 'void Model<VertexMesh>::loadModelGLTF(std::string)'
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2274): message : see reference to function template instantiation 'void Model<VertexMesh>::loadModelGLTF(std::string)' being compiled
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2113,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2127,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2141,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  A16.vcxproj -> D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\x64\Debug\A16.exe
