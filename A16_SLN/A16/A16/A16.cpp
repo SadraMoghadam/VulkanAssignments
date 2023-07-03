@@ -45,7 +45,11 @@ struct VertexOverlay {
 
 /* A16 */
 /* Add the C++ datastructure for the required vertex format */
-
+struct VertexVColor {
+	glm::vec3 pos;
+	glm::vec3 norm;
+	glm::vec3 color;
+};
 
 
 // MAIN ! 
@@ -59,36 +63,45 @@ class A16 : public BaseProject {
 	DescriptorSetLayout DSLGubo, DSLMesh, DSLOverlay;
 	/* A16 */
 	/* Add the variable that will contain the required Descriptor Set Layout */
+	DescriptorSetLayout DSLVColor;
 
 	// Vertex formats
 	VertexDescriptor VMesh;
 	VertexDescriptor VOverlay;
 	/* A16 */
 	/* Add the variable that will contain the required Vertex format definition */
+	VertexDescriptor VVColor;
 
 	// Pipelines [Shader couples]
 	Pipeline PMesh;
 	Pipeline POverlay;
 	/* A16 */
 	/* Add the variable that will contain the new pipeline */
+	Pipeline PVColor;
 
 	// Models, textures and Descriptors (values assigned to the uniforms)
 	// Please note that Model objects depends on the corresponding vertex structure
 	Model<VertexMesh> MBody, MHandle, MWheel;
 	/* A16 */
 	/* Add the variable that will contain the model for the room */
+	Model<VertexVColor> MRoom;
+
 	Model<VertexOverlay> MKey, MSplash;
 	DescriptorSet DSGubo, DSBody, DSHandle, DSWheel1, DSWheel2, DSWheel3, DSKey, DSSplash;
 	/* A16 */
 	/* Add the variable that will contain the Descriptor Set for the room */	
+	DescriptorSet DSRoom;
 	Texture TBody, THandle, TWheel, TKey, TSplash;
 	
 	// C++ storage for uniform variables
 	MeshUniformBlock uboBody, uboHandle, uboWheel1, uboWheel2, uboWheel3;
 	/* A16 */
 	/* Add the variable that will contain the Uniform Block in slot 0, set 1 of the room */
+	MeshUniformBlock uboRoom;
+
 	GlobalUniformBlock gubo;
 	OverlayUniformBlock uboKey, uboSplash;
+
 
 	// Other application parameters
 	float CamH, CamRadius, CamPitch, CamYaw;
@@ -111,9 +124,9 @@ class A16 : public BaseProject {
 		// Descriptor pool sizes
 		/* A16 */
 		/* Update the requirements for the size of the pool */
-		uniformBlocksInPool = 8;
+		uniformBlocksInPool = 9;
 		texturesInPool = 7;
-		setsInPool = 8;
+		setsInPool = 9;
 		
 		Ar = (float)windowWidth / (float)windowHeight;
 	}
@@ -144,6 +157,9 @@ class A16 : public BaseProject {
 				});
 		/* A16 */
 		/* Init the new Data Set Layout */
+		DSLVColor.init(this, {
+					{0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_ALL_GRAPHICS}
+			});
 				
 		DSLGubo.init(this, {
 					{0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_ALL_GRAPHICS}
@@ -196,6 +212,16 @@ class A16 : public BaseProject {
 				});
 		/* A16 */
 		/* Define the new Vertex Format */
+		VVColor.init(this, {
+				{0, sizeof(VertexVColor), VK_VERTEX_INPUT_RATE_VERTEX}
+			}, {
+				{0, 0, VK_FORMAT_R32G32B32_SFLOAT, offsetof(VertexVColor, pos),
+						sizeof(glm::vec3), POSITION},
+				{0, 1, VK_FORMAT_R32G32B32_SFLOAT, offsetof(VertexVColor, norm),
+						sizeof(glm::vec3), NORMAL},
+				{0, 2, VK_FORMAT_R32G32B32_SFLOAT, offsetof(VertexVColor, color),
+						sizeof(glm::vec3), COLOR}
+			});
 
 		// Pipelines [Shader couples]
 		// The second parameter is the pointer to the vertex definition
@@ -208,6 +234,7 @@ class A16 : public BaseProject {
  								    VK_CULL_MODE_NONE, false);
 		/* A16 */
 		/* Create the new pipeline, using shaders "VColorVert.spv" and "VColorFrag.spv" */
+		PVColor.init(this, &VVColor, "shaders/VColorVert.spv", "shaders/VColorFrag.spv", { &DSLGubo, &DSLVColor});
 
 		// Models, textures and Descriptors (values assigned to the uniforms)
 
@@ -220,6 +247,7 @@ class A16 : public BaseProject {
 		MWheel.init(this,  &VMesh, "Models/SlotWheel.obj", OBJ);
 		/* A16 */
 		/* load the mesh for the room, contained in OBJ file "Room.obj" */
+		MRoom.init(this, &VVColor, "Models/Room.obj", OBJ);
 
 
 		
@@ -258,6 +286,7 @@ class A16 : public BaseProject {
 		POverlay.create();
 		/* A16 */
 		/* Create the new pipeline */
+		PVColor.create();
 		
 		// Here you define the data set
 		DSBody.init(this, &DSLMesh, {
@@ -288,6 +317,9 @@ class A16 : public BaseProject {
 				});
 		/* A16 */
 		/* Define the data set for the room */
+		DSRoom.init(this, &DSLVColor, {
+					{0, UNIFORM, sizeof(MeshUniformBlock), nullptr}
+			});
 
 		DSKey.init(this, &DSLOverlay, {
 					{0, UNIFORM, sizeof(OverlayUniformBlock), nullptr},
@@ -310,6 +342,7 @@ class A16 : public BaseProject {
 		POverlay.cleanup();
 		/* A16 */
 		/* cleanup the new pipeline */
+		PVColor.cleanup();
 
 		// Cleanup datasets
 		DSBody.cleanup();
@@ -319,6 +352,7 @@ class A16 : public BaseProject {
 		DSWheel3.cleanup();
 		/* A16 */
 		/* cleanup the dataset for the room */
+		DSRoom.cleanup();
 
 		DSKey.cleanup();
 		DSSplash.cleanup();
@@ -345,12 +379,14 @@ class A16 : public BaseProject {
 		MSplash.cleanup();
 		/* A16 */
 		/* Cleanup the mesh for the room */
+		MRoom.cleanup();
 		
 		// Cleanup descriptor set layouts
 		DSLMesh.cleanup();
 		DSLOverlay.cleanup();
 		/* A16 */
 		/* Cleanup the new Descriptor Set Layout */
+		DSLVColor.cleanup();
 
 		DSLGubo.cleanup();
 		
@@ -359,6 +395,7 @@ class A16 : public BaseProject {
 		POverlay.destroy();
 		/* A16 */
 		/* Destroy the new pipeline */
+		PVColor.destroy();
 	}
 	
 	// Here it is the creation of the command buffer:
@@ -410,6 +447,11 @@ class A16 : public BaseProject {
 				static_cast<uint32_t>(MWheel.indices.size()), 1, 0, 0, 0);
 		/* A16 */
 		/* Insert the commands to draw the room */
+		PVColor.bind(commandBuffer);
+		MRoom.bind(commandBuffer);
+		DSRoom.bind(commandBuffer, PVColor, 1, currentImage);
+		vkCmdDrawIndexed(commandBuffer,
+			static_cast<uint32_t>(MRoom.indices.size()), 1, 0, 0, 0);
 
 		POverlay.bind(commandBuffer);
 		MKey.bind(commandBuffer);
@@ -599,8 +641,13 @@ class A16 : public BaseProject {
 		DSWheel3.map(currentImage, &uboWheel3, sizeof(uboWheel3), 0);
 		/* A16 */
 		/* fill the uniform block for the room. Identical to the one of the body of the slot machine */
-
 		/* map the uniform data block to the GPU */
+		World = glm::mat4(1);
+		uboRoom.amb = 1.0f; uboRoom.gamma = 180.0f; uboRoom.sColor = glm::vec3(1.0f);
+		uboRoom.mvpMat = Prj * View * World;
+		uboRoom.mMat = World;
+		uboRoom.nMat = glm::inverse(glm::transpose(World));
+		DSRoom.map(currentImage, &uboRoom, sizeof(uboRoom), 0);
 
 
 		uboKey.visible = (gameState == 1) ? 1.0f : 0.0f;

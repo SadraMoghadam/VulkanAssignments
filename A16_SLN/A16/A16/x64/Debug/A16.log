@@ -30,13 +30,12 @@ D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(
 D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(1991): message : while compiling class template member function 'void Model<VertexMesh>::loadModelOBJ(std::string)'
 D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2272): message : see reference to function template instantiation 'void Model<VertexMesh>::loadModelOBJ(std::string)' being compiled
 D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2268): message : while compiling class template member function 'void Model<VertexMesh>::init(BaseProject *,VertexDescriptor *,std::string,ModelType)'
-D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\A16.cpp(218): message : see reference to function template instantiation 'void Model<VertexMesh>::init(BaseProject *,VertexDescriptor *,std::string,ModelType)' being compiled
-D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\A16.cpp(77): message : see reference to class template instantiation 'Model<VertexMesh>' being compiled
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\A16.cpp(245): message : see reference to function template instantiation 'void Model<VertexMesh>::init(BaseProject *,VertexDescriptor *,std::string,ModelType)' being compiled
+D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\A16.cpp(84): message : see reference to class template instantiation 'Model<VertexMesh>' being compiled
 D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2099,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2059): message : while compiling class template member function 'void Model<VertexMesh>::loadModelGLTF(std::string)'
 D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2274): message : see reference to function template instantiation 'void Model<VertexMesh>::loadModelGLTF(std::string)' being compiled
 D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2113,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2127,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\A16\Starter.hpp(2141,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
   A16.vcxproj -> D:\University-Masters\Computer Graphics\Assignments\A16_SLN\A16\x64\Debug\A16.exe
