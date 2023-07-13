@@ -111,6 +111,6 @@ void Assignment14::createCylinderMesh(std::vector<Vertex>& vDef, std::vector<uin
 	// The procedures also fill the array vIdx with the indices of the vertices of the triangles
 	// The primitive built here is a cylinder, with radius 1, and height 2, centered in the origin.
 
-	create_cylinder(vDef, vIdx, 10, 2, 1);
+	create_cylinder(vDef, vIdx, 100, 2, 1);
 }
 

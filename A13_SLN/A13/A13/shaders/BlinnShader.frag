@@ -47,15 +47,23 @@ void main() {
 
 
 	// Write the shader here
+
+	//vec3 Hlx = normalize(gubo.lightDir + V);
+	//vec3 Specular = MS * pow(max(dot(N, Hlx), 0.0), gamma);
+	//vec3 Diffuse = MD * max(dot(gubo.lightDir, N), 0.0);
+	//
+	//vec3 DiffSpec = Diffuse + Specular + ME;
+
 	
-	vec3 Hlx = normalize(gubo.lightDir + V);
-	vec3 specular = MS * pow(max(dot(N, Hlx), 0.0), gamma);
-	vec3 diffuse = MD * max(dot(gubo.lightDir, N), 0.0);
-	
-	vec3 DiffSpec = diffuse + specular;
+	vec3 lightDir = (gubo.lightPos - fragPos) / length(gubo.lightPos - fragPos);
+	vec3 lightColor = gubo.lightColor.rgb * pow((g / length(gubo.lightPos - fragPos)), beta) * clamp((dot(lightDir, gubo.lightDir) - cosout) / (cosin - cosout), 0.0, 1.0);
+
+	vec3 Diffuse = MD * clamp(dot(N, lightDir),0.0,1.0);
+	vec3 Specular = MS * pow(clamp(dot(N, normalize(lightDir + V)),0.0,1.0), gamma);
+	vec3 DiffSpec = Diffuse + Specular;
 
 	vec3 Ambient = C00 + N.x * C11 + N.y * C1m1 + N.z * C10 + (N.x * N.y) * C2m2 + (N.y * N.z) * C2m1 + (N.z * N.x) * C21 + (N.x*N.x - N.y*N.y) * C22 + (3 * N.z * N.z - 1) * C20;
 	
-	outColor = vec4(DiffSpec * gubo.lightColor.rgb + MA * Ambient , 1.0f);
-	//outColor = vec4(MD, 1.0f);
+	outColor = vec4(clamp(DiffSpec * lightColor.rgb + MA * Ambient + ME, 0.0001f, 1.0), 1.0f);
+	//outColor = vec4(DiffSpec * gubo.lightColor.rgb + MA * Ambient, 1.0f);
 }
