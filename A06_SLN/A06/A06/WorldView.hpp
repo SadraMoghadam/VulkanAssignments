@@ -8,9 +8,9 @@ glm::mat4 MakeViewProjectionMatrix(float Ar, float Alpha, float Beta, float Rho,
 	// defining its direction. In particular, <Alpha> defines the direction (Yaw), <Beta> the
 	// elevation (Pitch), and <Rho> the roll.
 	fov = glm::radians(105.0f);
-	glm::mat4 Mv = glm::rotate(glm::mat4(1.0), -Rho, glm::vec3(0, 0, 1)) *
+	glm::mat4 Mv = glm::rotate(glm::mat4(1.0), -Alpha, glm::vec3(0, 1, 0)) *
 		glm::rotate(glm::mat4(1.0), -Beta, glm::vec3(1, 0, 0)) *
-		glm::rotate(glm::mat4(1.0), -Alpha, glm::vec3(0, 1, 0)) *
+		glm::rotate(glm::mat4(1.0), -Rho, glm::vec3(0, 0, 1)) *
 		glm::translate(glm::mat4(1.0), -Pos);
 	glm::mat4 M = glm::perspective(fov, Ar, 0.1f, 50.0f);
 	M[1][1] *= -1;
